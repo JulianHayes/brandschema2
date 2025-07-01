@@ -1,2 +1,2 @@
 # brandschema2
-parsed arsed
+parsed arsed trikle.so
