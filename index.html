@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BRAND:SCHEMA - Machine-Readable Brand Systems</title>
+    <meta name="description" content="A survival manual for modern brandcraft. Design your brand to be machine-readable and human-resonant.">
+    <meta name="keywords" content="brand systems, AI agents, semantic web, brand schema, machine readable">
+    <meta property="og:title" content="BRAND:SCHEMA - Machine-Readable Brand Systems">
+    <meta property="og:description" content="A survival manual for modern brandcraft. Design your brand to be machine-readable and human-resonant.">
+    <meta name="twitter:title" content="BRAND:SCHEMA - Machine-Readable Brand Systems">
+    <meta name="twitter:description" content="A survival manual for modern brandcraft. Design your brand to be machine-readable and human-resonant.">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --bg: #f6f6f6;
+            --text: #171717;
+            --accent: #f10b10;
+        }
+    }
+
+    @layer base {
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            line-height: 1.4;
+        }
+        
+        .mono {
+            font-family: 'Space Mono', monospace;
+        }
+        
+        .redacted {
+            background: linear-gradient(90deg, var(--text) 0%, var(--text) 100%);
+            color: var(--bg);
+            padding: 0 4px;
+        }
+    }
+
+    @layer components {
+        .btn-primary {
+            background-color: var(--text);
+            color: var(--bg);
+            padding: 12px 24px;
+            border: 2px solid var(--text);
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+        }
+        
+        .btn-primary:hover {
+            background-color: var(--bg);
+            color: var(--text);
+        }
+        
+        .btn-secondary {
+            background-color: transparent;
+            color: var(--text);
+            padding: 12px 24px;
+            border: 2px solid var(--text);
+            font-family: 'Space Mono', monospace;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: all 0.2s;
+        }
+        
+        .btn-secondary:hover {
+            background-color: var(--accent);
+            border-color: var(--accent);
+            color: var(--bg);
+        }
+        
+        .divider-vertical {
+            width: 2px;
+            background-color: var(--text);
+            height: 100%;
+        }
+        
+        .accent {
+            color: var(--accent);
+        }
+    }
+
+    @layer utilities {
+        .text-shadow {
+            text-shadow: 2px 2px 0px rgba(23, 23, 23, 0.1);
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel" src="components/Hero.js"></script>
+    <script type="text/babel" src="components/Problem.js"></script>
+    <script type="text/babel" src="components/Solution.js"></script>
+    <script type="text/babel" src="components/SchemaBuilder.js"></script>
+    <script type="text/babel" src="components/ResourcesLibrary.js"></script>
+    <script type="text/babel" src="components/WhySchema.js"></script>
+    <script type="text/babel" src="components/FutureModules.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
